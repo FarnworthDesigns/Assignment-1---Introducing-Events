@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Introducing Events</title>
+<link href="css/styles.css" rel="stylesheet">
+<!-- Bring in some Google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<!-- Bring in the jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Your beautiful jQuery code goes below -->
+<script>
+	$(document).ready(function(){
+		$("html").dblclick(function(){
+			alert("OUCH!");
+		});// end double click
+		$("a").mouseover(function(){
+			var message = ("<p>You moused over a link.</p>");
+			$(".content").append(message);
+		});// end mouseover
+		$("#button").click(function(){
+			$(this).val("Stop that!");
+		});// end click
+	}); // end ready
+</script>
+</head>
+<body>
+  <div class="content">
+    <h1>Introducing Events</h1>
+    <p><a href="#">A Link</a></p>
+    <form action="#" method="get">
+      <fieldset><legend>A Form</legend>
+          <p><input name="button" type="button" id="button" value="A Button"></p>
+      <p><input name="textfield" id="textfield" type="text"></p></fieldset>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 30px;
+	color: #2168b1;
+	border-bottom: solid 1px #aaa;
+	margin-bottom: 1em;
+	font-family: 'Oswald', sans-serif;
+}
+
+input {
+	font-size: 125%;
+}
+
+
+
+
+
+
+
